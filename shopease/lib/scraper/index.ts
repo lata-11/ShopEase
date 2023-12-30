@@ -79,7 +79,7 @@ export async function scrapeAmazonProduct(url: string) {
         highestPrice: Number(originalPrice) || Number(currentPrice),
         average: Number(currentPrice) || Number(originalPrice),
     }
-    console.log(data);
+    //console.log(data);
   } catch (error: any) {
     throw new Error(`failed to scrape product ${error.message}`);
   }
